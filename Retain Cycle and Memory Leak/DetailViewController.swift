@@ -16,16 +16,19 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     
-//       weak var delegate: DataModelDelegate? {
+//       weak var delegate: ViewController? {
 //        didSet {
 //            print("Ya")
 //            print(self.delegate)
 //        }
 //    }
     
-    var completionHandler: ((_ data: String) -> Void)?
+    var completionHandler: ((_ data: String) -> Void)? {
+        didSet {
+            print(self.completionHandler)
+        }
+    }
     
-
     deinit {
         print("----------------------")
         print("VC2 is bring removed from memory")
@@ -38,7 +41,6 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
 

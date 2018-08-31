@@ -14,18 +14,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    
+        
+        detailVC?.completionHandler = { (data) in
+            print("detailVC: \(self.detailVC!)") 
+            print(data)
+        }
+        
+        detailVC?.requestData()
     }
     
     @IBAction func pressed(_ sender: Any) {
-//        self.detailVC = nil
-        detailVC?.requestData()
-
-        detailVC?.completionHandler = { (data) in
-            print(data)
-        }
-
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "VC3")
@@ -33,8 +31,6 @@ class ViewController: UIViewController {
         appDelegate?.window?.rootViewController = viewController
     }
     
-
-
 }
 
 
