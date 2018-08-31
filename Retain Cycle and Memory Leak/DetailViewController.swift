@@ -33,11 +33,12 @@ class DetailViewController: UIViewController {
     
     func requestData() {
         let data = "Data from VC2"
-        completionHandler!(data)
+        completionHandler?(data)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
 

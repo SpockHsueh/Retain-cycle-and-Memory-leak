@@ -8,27 +8,32 @@
 
 import UIKit
 
-class ViewController: UIViewController, DataModelDelegate {
+class ViewController: UIViewController {
     
     var detailVC: DetailViewController? = DetailViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        detailVC?.delegate = self
-        detailVC?.requestData()
+
+    
     }
     
     @IBAction func pressed(_ sender: Any) {
 //        self.detailVC = nil
+        detailVC?.requestData()
+
+        detailVC?.completionHandler = { (data) in
+            print(data)
+        }
+
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "VC3")
         let appDelegate = UIApplication.shared.delegate as? AppDelegate
         appDelegate?.window?.rootViewController = viewController
     }
     
-    func didPassData(data: String) {
-        print(data)
-    }
+
 
 }
 
