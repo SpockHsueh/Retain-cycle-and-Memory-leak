@@ -8,20 +8,9 @@
 
 import UIKit
 
-//protocol DataModelDelegate: class {
-//    func didPassData(data: String)
-//}
-
 class DetailViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
-    
-//       weak var delegate: ViewController? {
-//        didSet {
-//            print("Ya")
-//            print(self.delegate)
-//        }
-//    }
     
     var completionHandler: ((_ data: String) -> Void)? {
         didSet {
@@ -42,6 +31,5 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
 
 }

@@ -15,8 +15,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        detailVC?.completionHandler = { (data) in
-            print("detailVC: \(self.detailVC!)") 
+        detailVC?.completionHandler = { [weak self] (data) in
+            print("detailVC: \(self?.detailVC!)")
             print(data)
         }
         
