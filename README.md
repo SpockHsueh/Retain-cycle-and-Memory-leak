@@ -57,7 +57,7 @@
 
 >### Although the data from the DataModel can be obtained normally, the VC2 has not disappeared and remains in the memory. It can be seen from the tool that Memory Leak has been caused.
 
-![](https://drive.google.com/open?id=1II0IlFwTEAwoUTBArD8e-_IABQluUGrO)
+![image](https://drive.google.com/open?id=1II0IlFwTEAwoUTBArD8e-_IABQluUGrO)
 
 ![](https://drive.google.com/open?id=10D-fBGHAVC4Htak95iW9t8xh9LLZH7NS)
 
