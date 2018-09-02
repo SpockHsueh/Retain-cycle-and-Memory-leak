@@ -57,11 +57,11 @@
 
 >### Although the data from the DataModel can be obtained normally, the VC2 has not disappeared and remains in the memory. It can be seen from the tool that Memory Leak has been caused.
 
-![image](https://drive.google.com/open?id=1II0IlFwTEAwoUTBArD8e-_IABQluUGrO)
+![image](https://github.com/SpockHsueh/Retain-cycle-and-Memory-leak/blob/master/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-02%20%E4%B8%8B%E5%8D%888.54.38.png)
 
-![](https://drive.google.com/open?id=10D-fBGHAVC4Htak95iW9t8xh9LLZH7NS)
+![image](https://github.com/SpockHsueh/Retain-cycle-and-Memory-leak/blob/master/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-02%20%E4%B8%8B%E5%8D%888.54.54.png)
 
-![](https://drive.google.com/open?id=1Dgq7LNxxL58xq1H6ioqJnTRUzkqTp0oj)
+![https://github.com/SpockHsueh/Retain-cycle-and-Memory-leak/blob/master/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-02%20%E4%B8%8B%E5%8D%889.00.22.png](https://drive.google.com/open?id=1Dgq7LNxxL58xq1H6ioqJnTRUzkqTp0oj)
 
 >### The solution is to add [weak self] in VC1:
 
