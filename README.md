@@ -61,7 +61,7 @@
 
 ![image](https://github.com/SpockHsueh/Retain-cycle-and-Memory-leak/blob/master/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-02%20%E4%B8%8B%E5%8D%888.54.54.png)
 
-![https://github.com/SpockHsueh/Retain-cycle-and-Memory-leak/blob/master/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-02%20%E4%B8%8B%E5%8D%889.00.22.png](https://drive.google.com/open?id=1Dgq7LNxxL58xq1H6ioqJnTRUzkqTp0oj)
+![image](https://github.com/SpockHsueh/Retain-cycle-and-Memory-leak/blob/master/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-02%20%E4%B8%8B%E5%8D%889.00.22.png)
 
 >### The solution is to add [weak self] in VC1:
 
@@ -73,7 +73,7 @@
 ```
 >### Now if we use tool again, the memory leak error will gone, everything is good:
 
-![](https://drive.google.com/open?id=1c0ak0Q1oAN2mbazH-NZLvLw3sQK5kCsv)
+![image](https://github.com/SpockHsueh/Retain-cycle-and-Memory-leak/blob/master/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-02%20%E4%B8%8B%E5%8D%889.05.01.png)
 ***
 
 # Part2. Delegate
@@ -109,11 +109,11 @@
 
 >### Unfortunately the VC2 also has not disappeared and remains in the memory. It can be seen from the tool that Memory Leak has been caused:
 
-![](https://drive.google.com/open?id=11fMBOZryDyAjLbEXD0DYh2AmOIUF66jc)
+![image](https://github.com/SpockHsueh/Retain-cycle-and-Memory-leak/blob/master/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-03%20%E4%B8%8A%E5%8D%8812.36.14.png)
 
-![](https://drive.google.com/open?id=1PLKRhE4xzCMXHduvfyi7zzZQ2lTZ96rT)
+![image](https://github.com/SpockHsueh/Retain-cycle-and-Memory-leak/blob/master/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-03%20%E4%B8%8A%E5%8D%8812.36.20.png)
 
-![](https://drive.google.com/open?id=10CbOlqW5XmoN17Iqm8SkR3899mVgckQI)
+![image](https://github.com/SpockHsueh/Retain-cycle-and-Memory-leak/blob/master/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-03%20%E4%B8%8A%E5%8D%8812.37.47.png)
 
 >### The solution is to add weak keyword in VC2:
 ```javascript
@@ -127,4 +127,4 @@
 
 >### Now if we use tool again, the memory leak error will gone, everything is good:
 
-![](https://drive.google.com/open?id=1hTrT5rKdcMLQNIwgI38iaMn5sqRs0aKx)
+![image](https://github.com/SpockHsueh/Retain-cycle-and-Memory-leak/blob/master/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-03%20%E4%B8%8A%E5%8D%8812.43.55.png)
